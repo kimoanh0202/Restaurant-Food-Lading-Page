@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Food > Checkout</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel="stylesheet" href="./assets/css/checkout.css"> -->
+    <link rel="stylesheet" href="./assets/css/buy.css">
+    <link rel="stylesheet" href="./assets/responsive/checkout_responsive.css">
+    <link rel="stylesheet" href="./assets/responsive/style_responsive.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet"> 
+
+</head>
+<body onload="renderListCustomer()">
+    <header class="header" id="header">
+        <div class="container-mw">
+          <!-- SECTION 1-DESIRE FOOD -->
+          <div class="navbar side-bar position-relative">
+            
+            <div class="navbar-inner side-bar_icon">
+              <a href="home.html" class="brand">
+                <img src="./assets/image/logo.png" alt="" />
+              </a>
+              <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+              </div>
+            </div>
+            <div class="side-bar_nav navbar-block" id="menu">
+              <ul class="side-bar_menu">
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Home</a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="#" class="menu-link">Our Menu</a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Foods</a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="#" class="menu-link">About us</a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="#" class="menu-link">Contact us</a>
+                </li>
+
+                <svg class="cart_menu" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                </svg>
+                
+                <li class="side-bar_login">
+                  <button name="button" type="button">Login</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <div class="restaurant_food">
+        <main class="position-relative">
+            <div class="next_page ">
+                <a style="color:#000" href="home.html">Home</a>
+                <p style="color:#000">/</p>
+                <p style="color:#F03328">Checkout</p#F03328>
+            </div>
+
+            <!-- SECTION 2-BILL -->
+            <form class="bill_detail" id="form" action="">
+                <div class="form-left" >
+                    <div class="left-title">
+                      <h3>Billing details</h3>
+                    </div>
+
+                    <div class="left-container">
+                        <div class="full_name">
+                            <div class="table-item item-1">
+                                <div class="item-title">
+                                    <span>First Name</span>
+                                    <span>*</span>
+                                </div>
+
+                                <div class="item-box">
+                                    <input type="text" id="firstname" placeholder="First Name" >
+                                    <div class="message"></div>
+                                </div>
+                            </div>
+
+                            <div class="table-item item-2 ">
+                                <div class="item-title">
+                                    <span>Last Name</span>
+                                    <span>*</span>
+                                </div>
+
+                                <div class="item-box">
+                                    <input type="text" id="lastname"  placeholder="Last Name" >
+                                    <div class="message"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="phone-mail">
+                            <div class="table-item item-3">
+                                <div class="item-title">
+                                    <span>Phone Number</span>
+                                    <span>*</span>
+                                </div>
+
+                                <div class="item-box">
+                                    <input type="tel" id="tel" placeholder="Phone Number" >
+                                    <div class="message"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="table-item  item-4" >
+                                <div class="item-title">
+                                    <span>Email Address</span>
+                                    <span>*</span>
+                                </div>
+                                <div class="item-box">
+                                    <input type="email" id="email" placeholder="Email Address" >
+                                    <div class="message"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="company_name table-item item-5" >
+                            <div class="item-title">
+                                <span>Company Name</span>
+                                <span></span>
+                            </div>
+
+                            <div class="item-box">
+                                <input type="text" id="company" placeholder="Company Name">
+                                
+                            </div>
+                        </div>
+
+                        <div class="street_city table-item item-6">
+                            <div class="item-title">
+                                <span>City</span>
+                                <span>*</span>
+                            </div>
+
+                            <div class="street_city item-box">
+                                <select name="browser" id="city">
+                                    <option value=""disabled selected>Select a city</option>
+                                    <option value="Đà Nẵng">Đà Nẵng</option>
+                                    <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                    <option value="Hà Nội">Hà Nội</option>
+                                    <option value="Gia Lai">Gia Lai</option>
+                                    <option value="Ninh Bình">Ninh Bình</option>
+                                    <option value="Lâm Đồng">Lâm Đồng</option>
+                                    <option value="Hà Giang">Hà Giang</option>
+                                </select>
+                                <div class="message"></div>
+                               
+                                
+                            </div>
+                        </div>
+
+                        <div class="street_address table-item item-7">
+                            <div class="item-title">
+                                <span>Stress Address</span>
+                                <span>*</span>
+                            </div>
+
+                            <div class="item-box">
+                                <input type="text" placeholder="Stress Address" id="address">
+                                <div class="message"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-right position-relative">
+                    <div class="position-absolute bg-ellipse bg-ellipse-6"></div>
+                    
+                    <div class="right_product_subtotal">
+                        <p>Product</p>
+                        <p>Subtotal</p>
+                    </div>
+
+                    <div class="right_product_price">
+                        <div class="product-name_quanlity">
+                            <div class="product-name">
+                                <p>Breakfast Food</p>
+                             </div>
+     
+                             <div class="product-quanlity">
+                                 <p>x1</p>
+                             </div>
+                        </div>
+
+                        <div class="product-price">
+                            <p>230$</p>
+                        </div>
+                    </div>
+
+                    <div class="right_amount">
+                        <div class="amount-text">
+                            <p>Subtotal</p>
+                        </div>
+
+                        <div class="amount-cost">
+                            <p>230$</p>
+                        </div>
+                    </div>
+
+                    <div class="right_total">
+                        <div class="total-name">
+                            <p>Total</p>
+                        </div>
+
+                        <div class="total-product">
+                            <p>Rs. 230$</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="payment_radio">
+                        <input type="radio" id="bank" name="payment">
+                        <label for="bank">Direct Bank Transfer</label>
+                        <p class="content" id="bankContent">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+                        <br>
+
+                        <input type="radio" id="cash" name="payment">
+                        <label for="cash">Cash On Delivery</label> 
+                        <p class="content" id="cashContent">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+
+                    </div>
+
+                    <div class="payment_content">
+                        <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <b>privacy policy.</b> </p> 
+                    </div>
+
+                    <div class="coupon">
+                        <div class="coupon_code">
+                            <input type="text" placeholder="Coupon code" id="coupon">
+                        </div>
+
+                        <div class="apply_coupon">
+                            <button name="button" type="button" onclick="applyCoupon()">Apply Coupon</button>
+                        </div>
+
+                        <div id="sucess"></div>
+                        <div id="error"></div>
+                    </div>
+
+                    <div class="place_order">
+                        <button name="button" type="submit">Place Order</button>
+                    </div>
+                </div>
+
+                <div class="position-absolute bg-ellipse bg-ellipse-1"></div>
+            </form>
+
+            <div class="list-customer">
+                <table id="grid-customer"></table>
+              </div>
+
+            
+        </main>
+    </div>  
+
+    <!-- SECTION 5 - FOOTER -->
+    <footer>
+        <div class="footer-containt">
+            <div class="footer">
+                <div class="footer_top-line">
+                    <div class="footer_top">
+                        <div class="footer_top-left">
+                            <div class="top-left-title">
+                                <h4 style="color:#101113">Join Our</h4>
+                                <h4 style="color: #F03328">Newsletter</h4>
+                            </div>
+    
+                            <div class="top-left-content">
+                                <p>Be the first to know about our latest updates, exclusive offers, and more.</p>
+                            </div>
+                        </div>
+    
+                        <div class="footer_top-right">
+                            <div class="top-right-email">
+                                <input type="text" placeholder="Enter your email address">
+                            </div>
+    
+                            <div class="top-right-subscribe">
+                                <button name="button" type="button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer_center">
+                    <div class="center-items">
+                        <div class="center_items-p">
+                            <p>Product & Service</p>
+                        </div>
+    
+                        <div class="center_items-a">
+                            <div class="items-a">
+                                <a href="#">Products</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <a href="#">Services</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <a href="#">Appliances</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="name-a">
+                                    <a href="#">Storage</a>
+                                </div>
+    
+                                <div class="new-p">
+                                    <p>New</p>
+                                </div>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="name-a">
+                                    <a href="#">Lifestyle</a>
+                                </div>
+    
+                                <div class="item-svg">
+                                    <img src="./assets/image/arrow-up-right.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="center-items">
+                        <div class="center_items-p">
+                            <p>Shop Now</p>
+                        </div>
+    
+                        <div class="center_items-a">
+                            <div class="items-a">
+                                <a href="#">Offers</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <a href="#">Promos</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <a href="#">Online Shop FAQ</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="name-a">
+                                    <a href="#">Business Offer</a>
+                                </div>
+    
+                                <div class="new-p">
+                                    <p>New</p>
+                                </div>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="name-a">
+                                    <a href="#">Student Offer</a>
+                                </div>
+    
+                                <div class="item-svg">
+                                    <img src="./assets/image/arrow-up-right.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="center-items">
+                        <div class="center_items-p">
+                            <p>Support</p>
+                        </div>
+    
+                        <div class="center_items-a">
+                            <div class="items-a">
+                                <a href="#">Contact</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="lifestyle_name-a">
+                                    <a href="#">Email Support</a>
+                                </div>
+    
+                                <div class="item-svg">
+                                    <img src="./assets/image/arrow-up-right.svg" alt="">
+                                </div>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="lifestyle_name-a">
+                                    <a href="#">Live Chat</a>
+                                </div>
+    
+                                <div class="item-svg">
+                                    <img src="./assets/image/arrow-up-right.svg" alt="">
+                                </div>
+                            </div>
+    
+                            <div class="items-a">
+                                <a href="#">Phone Support</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="name-a">
+                                    <a href="#">Community</a>
+                                </div>
+    
+                                <div class="item-svg">
+                                    <img src="./assets/image/arrow-up-right.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="center-items">
+                        <div class="center_items-p">
+                            <p>Account</p>
+                        </div>
+    
+                        <div class="center_items-a">
+                            <div class="items-a">
+                                <a href="#">My Products</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <a href="#">Orders</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <a href="#">Wishlist</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="name-a">
+                                    <a href="#">Service</a>
+                                </div>
+    
+                                <div class="new-p">
+                                    <p>New</p>
+                                </div>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="name-a">
+                                    <a href="#">Rewards</a>
+                                </div>
+    
+                                <div class="item-svg">
+                                    <img src="./assets/image/arrow-up-right.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="center-items">
+                        <div class="center_items-p">
+                            <p>About</p>
+                        </div>
+    
+                        <div class="center_items-a">
+                            <div class="items-a">
+                                <a href="#">Company Info</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <a href="#">Brand Guidelines</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <a href="#">Careers</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="name-a">
+                                    <a href="#">Investors</a>
+                                </div>
+    
+                                <div class="new-p">
+                                    <p>New</p>
+                                </div>
+    
+                                <div class="item-svg">
+                                    <img src="./assets/image/arrow-up-right.svg" alt="">
+                                </div>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="name-a">
+                                    <a href="#">About Us</a>
+                                </div>
+    
+                                <div class="item-svg">
+                                    <img src="./assets/image/arrow-up-right.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer_bottom">
+                    <div class="footer_bottom-left">
+                        <img src="./assets/image/Logo (1).png" alt="">
+                    </div>
+    
+                    <div class="footer_bottom-center">
+                        <p>English</p>
+                        <p>Privacy</p>
+                        <p>Legal</p>
+                    </div>
+    
+                    <div class="footer_bottom-right">
+                        <p>© 2023 Cadet UI. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </footer>
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/checkout.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,257 @@
+@media screen and (max-width: 1439px){
+    .coupon_code input{
+        padding: 10px 60px 10px 15px;
+    }
+    .apply_coupon button {
+        padding: 10px 15px;
+    }
+    .full_name, .phone-mail{
+        gap: 30px;
+    }
+    .bill_detail-left {
+        background: #FFF;
+        padding: 32px 20px 220px;
+        width: 52%;
+    }
+    .bill_detail{
+        margin-bottom: 80px;
+        gap: 35px;
+    }
+}
+
+@media screen and (max-width: 1199px){
+    .full_name, .phone-mail {
+        gap: 20px;
+    }
+    .bill_detail{
+        gap: 25px;
+        margin-bottom: 30px;
+    }
+    .form-left {
+        padding: 32px 20px 180px;
+    }
+    .form-right{
+        padding: 85px 20px 60px;
+    }
+    .left-title{
+        font-size: 32px;
+    }
+    .left-container{
+        gap: 24px;
+    }
+    .item-title{
+        font-size: 15px;
+    }
+    .right_product_subtotal{
+        font-size: 22px;
+    }
+    .total-product{
+        font-size: 22px;;
+    }
+    .payment_text,.payment_content, .content{
+        font-size: 15px;
+    }
+    .payment_radio label {
+        font-size: 15px;
+    }
+    .coupon_code{
+        width: 65%;
+    }
+    .apply_coupon{
+        width: 35%;
+    }
+    .apply_coupon button {
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+    
+    .coupon_code input{
+        padding: 10px 65px 10px 15px;
+        font-size: 14px;
+        width: 100%;
+    }
+    .new-p {
+        padding: 3px 8px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .bill_detail {
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+    .form-left {
+        padding: 32px 20px 90px;
+    }
+    .full_name, .phone-mail{
+        gap: 22px;
+        flex-direction: column;
+    }
+    .full_name .table-item ,.phone-mail .table-item{
+        width: 100%;
+    }
+    .item-title span:first-child  {
+        font-size: 14px;
+    }
+    .left-container {
+        gap: 22px;
+    }
+    .left-title {
+        font-size: 28px;
+    }
+    .right_product_subtotal {
+        font-size: 20px;
+    }   
+    .product-name_quanlity{
+        gap: 6px;
+    }
+    .product-name, .product-quanlity, .product-price p, .amount-text, .amount-cost, .total-name{
+        font-size: 15px;
+    }
+    hr{
+        margin-bottom: 28px;
+    }
+    .total-product {
+        font-size: 20px;
+    }
+    .coupon_code input {
+        padding: 10px 47px 10px 10px;
+        font-size: 12px;
+    }
+    .apply_coupon button {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+    .coupon {
+        gap: 15px;
+        margin-top: 35px
+    }
+    .place_order button{
+        font-size: 12px;
+        padding: 10px 12px;
+        margin-top: 22px;
+    }
+    .center_items-p, .center_items-a {
+        font-size: 14px;
+    }
+    .new-p {
+        padding: 2px 5px;
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .bill_detail{
+        flex-direction: column;
+        gap: 30px
+    }
+    .form-left, .form-right{
+        width: 100%;
+        padding: 30px 25px 40px;
+    }
+    .left-title {
+        font-size: 31px;
+    }
+    .item-title span:first-child  {
+        font-size: 16px;
+    }
+    .full_name, .phone-mail{
+        flex-direction: row;
+    }
+    .right_product_subtotal {
+        font-size: 24px;
+    }
+    .product-name, .product-quanlity, .product-price p, .amount-text, .amount-cost, .total-name {
+        font-size: 17px;
+    }
+    .total-product {
+        font-size: 22px;
+    }
+    .payment_radio label, .payment_text, .payment_content,.content{
+        font-size: 17px;
+    }
+    .coupon{
+        gap: 30px;
+    }
+    .coupon_code input {
+        padding: 10px 130px 10px 20px;
+        font-size: 16px;
+    }
+    .apply_coupon button {
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+    .place_order button {
+        font-size: 15px;
+        padding: 12px 20px;
+        margin-top: 26px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .new-p {
+        padding: 2px 3px;
+        font-size: 11px;
+    }
+    .left-container, .full_name, .phone-mail {
+        gap: 18px;
+    }
+
+    .form-left, .form-right {
+        padding: 25px 15px 35px;
+    }
+    .full_name, .phone-mail {
+        flex-direction: column;
+    }
+    .item-title span:first-child{
+        font-size: 15px;
+    }
+    .coupon {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coupon_code{
+        width: 100%
+    }
+    .apply_coupon{
+        width: 100%;
+    }
+    .apply_coupon button {
+        width: 100%;
+    }
+    .coupon{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 374px) { 
+    .form-left, .form-right {
+        padding: 25px 15px 10px;
+    }
+    .left-title {
+        font-size: 28px;
+    }
+    .right_product_subtotal {
+        font-size: 22px;
+    }
+    .product-name, .product-quanlity, .product-price p, .amount-text, .amount-cost, .total-name {
+        font-size: 15px;
+    }
+    .total-product {
+        font-size: 20px;
+    }
+    .payment_radio label, .payment_text, .payment_content, .content {
+        font-size: 16px;
+    }
+    .coupon_code input,.apply_coupon button, .place_order button{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .coupon {
+        gap: 15px;
+    }
+}
+

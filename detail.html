@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Food > Detail</title>
+    <link rel="stylesheet" href="./assets/css/detail.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/responsive/detail_responsive.css">
+    <link rel="stylesheet" href="./assets/responsive/style_responsive.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container-mw">
+          <!-- SECTION 1-DESIRE FOOD -->
+          <div class="navbar side-bar position-relative">
+            
+            <div class="navbar-inner side-bar_icon">
+              <a href="home.html" class="brand">
+                <img src="./assets/image/logo.png" alt="" />
+              </a>
+              <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+              </div>
+            </div>
+            <div class="side-bar_nav navbar-block" id="menu">
+              <ul class="side-bar_menu">
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Home</a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="#" class="menu-link">Our Menu</a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Foods</a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="#" class="menu-link">About us</a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="#" class="menu-link">Contact us</a>
+                </li>
+
+                <svg class="cart_menu" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                </svg>
+
+                <li class="side-bar_login">
+                  <button name="button" type="button">Login</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </header>
+    
+    <div class="restaurant_food">
+        <main>
+            <div class="next_page">
+                <a style="color:#000" href="home.html">Home</a>
+                <p style="color:#000">/</p>
+                <p style="color:#F03328">Detail</p#F03328>
+            </div>
+            <!-- SECTION 2 - BREAKFAST FOOD -->
+            <div id="Breakfast_food" class="info_detail position-relative">
+                <div class="position-absolute bg-ellipse bg-ellipse-7"></div>
+                
+                <div class="slideshow-container" id="slideshow-container">
+                    <div class="dot_slider" id="dot_slider">
+                    </div>
+                </div>
+                
+ 
+                
+                <div class="info-right" id="info-right">
+                </div>
+
+                <!-- <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <img src="./assets/image/product-1.png" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img src="./assets/image/product-2.png" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img src="./assets/image/product-3.png" style="width:100%">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    <div class="dot_slider">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                </div>
+
+                <div class="info-right">
+                    <div class="info-right_title">
+                        <p>Breakfast Food</p>
+                    </div>
+
+                    <div class="info-right_review">
+                        <div class="review_star">
+                            <img src="./assets/image/Frame.svg">
+                            <img src="./assets/image/Frame.svg">
+                            <img src="./assets/image/Frame.svg">
+                            <img src="./assets/image/Frame.svg">
+                            <img src="./assets/image/Frame.svg">
+                        </div>
+
+                        <div class="review_count_customer">
+                            <p>5 Customer Review</p>
+                        </div>
+                    </div>
+
+                    <div class="info-right_content">
+                        <p>I recently dined at your restaurant and wanted to share my experience. The food was
+                            absolutely delicious, and I was impressed by the freshness of the ingredients. Each dish was
+                            bursting with flavor, and the portion sizes were perfect. The service was quick and
+                            efficient, and the staff was incredibly friendly and welcoming.</p>
+                    </div>
+
+                    <div class="info-right_price">
+                        <p>$230</p>
+                    </div>
+
+                    <div class="info-right_buy">
+                        <div class="number_order">
+                            <button class="decrease" onclick="descrease()">
+                                <img src="./assets/image/Frame (2).svg" alt="">
+                            </button>
+
+                            <div class="order-price">
+                                <input id="quantity" type="number" min="0" max="100" value="1" />
+                            </div>
+
+                            <button class="increase" onclick="increase()">
+                                <img src="./assets/image/Frame (1).svg" alt="">
+                            </button>
+                        </div>
+
+                        <svg class="icon_cart" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                        </svg>
+
+                        <div class="button_buy">
+                            <button class="btn-buynow" onclick="window.location.href='./checkout.html'">Buy Now</button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- SECTION 3 - DESCRIBE -->
+            <div class="tab_nav-detail">
+                <div class="describe_detail">
+                    <button class="button-describe_detail tablink default-selected" onclick="openTab(event,'Description')">Description</button>
+                    <button class="button-describe_detail tablink" onclick="openTab(event,'Specification')">Specification</button>
+                    <button class="button-describe_detail tablink" onclick="openTab(event,'Reviews')">Reviews</button>
+                </div>
+            
+                <div id="Description" class="describe_content">
+                    <p> The ingredients are quite similar, too: tomatoes, peppers, onions, eggplants (optional in mechouia), and garlic. Tunisian grilled veggies salad, however, contains tuna fish and boiled eggs, which make it a more hearty meal. Despite the cooking method, it can be labeled healthy, given the vitamins and nutrients delivered by its plant components, and it’s always good to have something like that when you’re on a gastronomic tour in an exotic African country.</p>
+                </div>
+            
+                <div id="Specification" class="describe_content" style="display:none">
+                    <p>Grilled vegetable salads are a culinary delight found beyond the borders of Tunisia. In the Caucasus, for instance, a similar dish graces the tables, albeit with its own unique flair. Here, vegetables are skewered, roasted over open flames, and then expertly chopped into a harmonious starter mix. The ingredients mirror those of Tunisian cuisine, featuring tomatoes, peppers, onions, and garlic, with eggplants as an optional addition. However, the Tunisian rendition stands out with the inclusion of tuna fish and boiled eggs, elevating it to a heartier meal option.</p> 
+                </div>
+            
+                <div id="Reviews" class="describe_content" style="display:none">
+                    <p>In the Caucasus region, grilled vegetable salads are not uncommon either. Local cookbooks often feature recipes suggesting a similar approach, albeit with a twist. Here, vegetables are skewered, roasted over an open flame, and then finely chopped to create a delightful starter mix. Tomatoes, peppers, onions, and garlic form the base of these salads, with eggplants being an optional addition. The result is a vibrant medley of flavors and textures that tantalize the taste buds.</p>
+                </div>
+            </div>
+
+            <!-- SECTION 4 - RELATED PRODUCT -->
+            <div class="related_detail">
+                <div class="related_detail-title">
+                    <p>Related Product</p>
+                </div>
+
+                <div id="list_product" class="product_dishes position-relative"></div>
+                    <div class="position-absolute bg-ellipse bg-ellipse-3"></div>
+                <div class="related_detail-button">
+                    <button onclick="showmore()" id="show-more">Show More</button>
+                </div>
+                <div class="related_detail-button">
+                    <button onclick="showless()" id="show-less">Show Less</button>
+                </div>
+
+
+            </div>
+        </main>   
+    </div>
+
+    <!-- SECTION 5 - FOOTER -->
+    <footer>
+        <div class="footer-containt">
+            <div class="footer">
+                <div class="footer_top-line">
+                    <div class="footer_top">
+                        <div class="footer_top-left">
+                            <div class="top-left-title">
+                                <h4 style="color:#101113">Join Our</h4>
+                                <h4 style="color: #F03328">Newsletter</h4>
+                            </div>
+    
+                            <div class="top-left-content">
+                                <p>Be the first to know about our latest updates, exclusive offers, and more.</p>
+                            </div>
+                        </div>
+    
+                        <div class="footer_top-right">
+                            <div class="top-right-email">
+                                <input type="text" placeholder="Enter your email address">
+                            </div>
+    
+                            <div class="top-right-subscribe">
+                                <button name="button" type="button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer_center">
+                    <div class="center-items">
+                        <div class="center_items-p">
+                            <p>Product & Service</p>
+                        </div>
+    
+                        <div class="center_items-a">
+                            <div class="items-a">
+                                <a href="#">Products</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <a href="#">Services</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <a href="#">Appliances</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="name-a">
+                                    <a href="#">Storage</a>
+                                </div>
+    
+                                <div class="new-p">
+                                    <p>New</p>
+                                </div>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="name-a">
+                                    <a href="#">Lifestyle</a>
+                                </div>
+    
+                                <div class="item-svg">
+                                    <img src="./assets/image/arrow-up-right.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="center-items">
+                        <div class="center_items-p">
+                            <p>Shop Now</p>
+                        </div>
+    
+                        <div class="center_items-a">
+                            <div class="items-a">
+                                <a href="#">Offers</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <a href="#">Promos</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <a href="#">Online Shop FAQ</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="name-a">
+                                    <a href="#">Business Offer</a>
+                                </div>
+    
+                                <div class="new-p">
+                                    <p>New</p>
+                                </div>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="name-a">
+                                    <a href="#">Student Offer</a>
+                                </div>
+    
+                                <div class="item-svg">
+                                    <img src="./assets/image/arrow-up-right.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="center-items">
+                        <div class="center_items-p">
+                            <p>Support</p>
+                        </div>
+    
+                        <div class="center_items-a">
+                            <div class="items-a">
+                                <a href="#">Contact</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="lifestyle_name-a">
+                                    <a href="#">Email Support</a>
+                                </div>
+    
+                                <div class="item-svg">
+                                    <img src="./assets/image/arrow-up-right.svg" alt="">
+                                </div>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="lifestyle_name-a">
+                                    <a href="#">Live Chat</a>
+                                </div>
+    
+                                <div class="item-svg">
+                                    <img src="./assets/image/arrow-up-right.svg" alt="">
+                                </div>
+                            </div>
+    
+                            <div class="items-a">
+                                <a href="#">Phone Support</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="name-a">
+                                    <a href="#">Community</a>
+                                </div>
+    
+                                <div class="item-svg">
+                                    <img src="./assets/image/arrow-up-right.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="center-items">
+                        <div class="center_items-p">
+                            <p>Account</p>
+                        </div>
+    
+                        <div class="center_items-a">
+                            <div class="items-a">
+                                <a href="#">My Products</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <a href="#">Orders</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <a href="#">Wishlist</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="name-a">
+                                    <a href="#">Service</a>
+                                </div>
+    
+                                <div class="new-p">
+                                    <p>New</p>
+                                </div>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="name-a">
+                                    <a href="#">Rewards</a>
+                                </div>
+    
+                                <div class="item-svg">
+                                    <img src="./assets/image/arrow-up-right.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="center-items">
+                        <div class="center_items-p">
+                            <p>About</p>
+                        </div>
+    
+                        <div class="center_items-a">
+                            <div class="items-a">
+                                <a href="#">Company Info</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <a href="#">Brand Guidelines</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <a href="#">Careers</a>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="name-a">
+                                    <a href="#">Investors</a>
+                                </div>
+    
+                                <div class="new-p">
+                                    <p>New</p>
+                                </div>
+    
+                                <div class="item-svg">
+                                    <img src="./assets/image/arrow-up-right.svg" alt="">
+                                </div>
+                            </div>
+    
+                            <div class="items-a">
+                                <div class="name-a">
+                                    <a href="#">About Us</a>
+                                </div>
+    
+                                <div class="item-svg">
+                                    <img src="./assets/image/arrow-up-right.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer_bottom">
+                    <div class="footer_bottom-left">
+                        <img src="./assets/image/Logo (1).png" alt="">
+                    </div>
+    
+                    <div class="footer_bottom-center">
+                        <p>English</p>
+                        <p>Privacy</p>
+                        <p>Legal</p>
+                    </div>
+    
+                    <div class="footer_bottom-right">
+                        <p>© 2023 Cadet UI. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </footer>
+    <script src="./assets/js/detail.js"></script>
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/seller_detail.js"></script>
+    <script src="./assets/js/slider_detail.js"></script>
+</body>
+
+
+</html>
+
+
+
+

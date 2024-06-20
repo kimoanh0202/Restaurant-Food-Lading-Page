@@ -1,0 +1,279 @@
+
+/* SECTION 2-BILLING DETAIL  */
+.bill_detail{
+    display: flex;
+    justify-content: space-between;
+    gap:44px;
+    margin-bottom: 100px;
+}
+.bill_detail-left{
+    background: #FFF;
+    padding: 32px 26px 238px 26px;
+    width: 52%;
+}
+.left-title{
+    color: #000;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 27px;
+}
+.left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.left-container input, select{
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid  #D6D6D6;
+    color: #5C5C5C;
+}
+.full_name{
+    display: flex;
+    align-items: flex-start;
+    gap: 38px;
+}
+.phone-mail{
+    display: flex;
+    align-items: flex-start;
+    gap: 38px;
+}
+
+.company_name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    width: 100%;
+}
+.street_city{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    width: 100%;
+}
+.street_address{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    width: 100%;
+}
+.first_name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    width: 50%;
+}
+.first_name-p,.last_name-p, .phone_number-p, .email_address-p, .street_city-p, .street_address-p{
+    display: flex;
+    gap:5px;
+}
+.first_name p{
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.last_name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    width: 50%;
+}
+.first_name input:focus-visible{
+    outline: none;
+}
+.last_name input:focus-visible{
+    outline: none;
+}
+.phone_number input:focus-visible{
+    outline: none;
+}
+.email_address input:focus-visible{
+    outline: none;
+}
+.company_name input:focus-visible{
+    outline: none;
+}
+.street_address input:focus-visible{
+    outline: none;
+}
+.street_city section:focus-visible{
+    outline: none;
+}
+.last_name p{
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+.phone_number {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    width: 50%;
+}
+.email_address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    width: 50%;
+}
+
+.bill_detail-right{
+    background: #FFF;
+    padding: 90px 30px 59px 30px;
+    width: 48%;
+}
+.right_product_subtotal, .right_product_price, .right_amount, .right_total{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.right_product_subtotal{
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+}
+.product-name_quanlity{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.product-name{
+    color: #9F9F9F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+.product-quanlity, .product-price p, .amount-text, .amount-cost,.total-name{
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+.total-product{
+    color: #B88E2F;
+    font-size: 24px;
+    font-weight: 700;
+}
+hr {
+    display: block;
+    margin-top: 34px;
+    margin-bottom: 21px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #D9D9D9;
+    border-width: 1px;
+}
+.payment_radio label{
+    color: #9F9F9F;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    font-weight: 500;
+}
+
+.payment_radio input[type="radio"] {
+    display: none; /* Ẩn radio button mặc định */
+}
+
+.payment_radio input[type="radio"] + label {
+    position: relative;
+    padding-left: 25px; /* Khoảng cách giữa chấm và label */
+    cursor: pointer;
+}
+
+.payment_radio input[type="radio"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px; /* Kích thước của chấm */
+    height: 14px; /* Kích thước của chấm */
+    border-radius: 50%; /* Hình dạng chấm là hình tròn */
+    border: 1px solid #000; /* Màu viền chấm */
+}
+
+.payment_radio input[type="radio"]:checked + label:before {
+    background-color: #000; /* Màu sắc của chấm khi được chọn */
+}
+
+.payment_choice{
+    display: flex;
+    gap: 4px;
+}
+.payment_text{
+    margin-top: 11px;
+    margin-bottom: 25px;
+    color: #9F9F9F;
+    font-size: 16px;
+    font-weight: 300;
+}
+.payment_content{ 
+    margin-top: 22px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+}
+.coupon{
+    display: inline-flex;
+    margin-top: 41px;
+    gap: 36px;
+}
+.coupon_code input{
+    color:  #000;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    padding: 10px 102px 10px 24px;
+    border-radius: 8px;
+    border: 1px solid #F03328;
+}
+.apply_coupon button{
+    padding: 10px 24px;
+    border-radius: 38px;
+    background: #F03328;
+    border-radius: 38px;
+    background-color: #F03328;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+}
+
+.place_order button{
+    margin-top: 27px;
+    padding: 10px 24px;
+    gap: 38px;
+    border-radius: 38px;
+    background-color: #F03328;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+}
+
+
+
+
+
+
+
+

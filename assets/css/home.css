@@ -1,0 +1,434 @@
+/* SECTION 1-DESIRE FOOD  */
+.main-side {
+  display: flex;
+  gap: 44px;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-left {
+  flex: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 67px 0;
+}
+
+.main-right{
+  position: relative;
+  margin-left: 5%;
+  display:flex;
+  justify-content: center;
+  flex:60%;
+}
+
+.img-banner{
+  width: 85%;
+}
+
+.bg-vector {
+  width: 82%;
+  height: 82%;
+  background-color: #FF9E0C;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 10%;
+  left: 7%;
+}
+
+.main-right_girl{
+  position: relative;
+  padding: 98px 17px 14px 122px;
+}
+
+.main_title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 27px 0;
+}
+.main_title h3 {
+  text-align: center;
+  font-size: 61px;
+  font-style: normal;
+  font-weight: 700;
+}
+.main_title h3:last-child {
+  font-size: 58px;
+  padding: 10px 40px;
+  background: linear-gradient(109deg, #FF9E0C -0.93%, #D58000 104.81%);
+  color: #fff;
+  transform: rotate(-11.457deg);
+  border-radius: 54px;
+}
+.main_text h3 {
+  font-size: 61px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.main_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 37px;
+}
+.text p {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  color: #666666;
+
+}
+.btn-ordnow button{
+  background-color: #f03328;
+  padding: 17px 43px;
+  border-radius: 38px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* .backgrought_color {
+  width: 90%;
+  height: 84%;
+  background-color: #ff9e0c;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 1.5%;
+  z-index: -1;
+  right: 7%;
+} */
+
+.items-pop_delivery{
+  display: inline-flex;
+  /* display: flex; */
+  /* ở đây nếu e dùng display flex thì nó cùng dàn ngang cho em nhưng lại nằm ở giữa của bg, còn dùng inline thì nằm bên trái */
+  padding: 12px 24px;
+  gap: 16px;
+  border-radius: 14px;
+  background: #FFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  top: 25%;
+  left: -5%;
+}
+.text-items h5{
+  color: #404040;
+  font-size: 22px;
+  font-weight: 700;
+}
+.text-items p{
+  color: #666;
+  font-size: 20px;
+  font-weight: 500;
+}
+.items-pop_location{
+  display: inline-flex;
+  padding: 12px 24px;
+  gap: 16px;
+  border-radius: 14px;
+  background: #FFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  bottom: 5%;
+  right: -3%;
+}
+
+.items-pop_ahmad{
+  display: inline-flex;
+  padding: 12px 24px;
+  gap: 18px;
+  border-radius: 14px;
+  background: #FFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  bottom: -5%;
+  left: -8%;
+}
+.items-content{
+  display: flex;
+  gap: 7px;
+  flex-direction: column;
+}
+.text-items_name{
+  color: #404040;
+  font-size: 25px;
+  font-weight: 700;
+}
+.text-items_comment{
+  display: flex;
+  gap: 19px;
+  justify-content: space-between;
+}
+.comment_left{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.comment_left p{
+  color: #666;
+  font-size: 20px;
+  font-weight: 500;
+}
+.comment_right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+.footer-side {
+  margin-top: 86px;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+.footer_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  padding: 22px 0px;
+  gap: 18px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+
+}
+.item-content {
+  margin: 0 30px;
+}
+.item-content h3 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: 120%;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.item-content p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  color: #666;
+  text-align: center;;
+}
+.item-title p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.item-title p:hover{
+  color: red;
+  cursor: pointer;
+}
+
+/* SECTION 2-WHY PEOPLE CHOOSE US */
+.container {
+  margin: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 84px;
+}
+.container-item {
+  display: flex;
+  width: 100%;
+  padding: 18px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  background-color: #fff;
+  border-radius: 18px;
+  margin-top: 20px;
+}
+.container-title h2 {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.container-item_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.container-item_content h3 {
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: 120%;
+}
+.container-item_content p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  color: #404040;
+}
+
+
+/* SECTION 3-OUR BEST SELLER(title, item) */
+.seller{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.seller_title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 30px;
+}
+.seller_title h2 {
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.seller_title p {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  color: #5c5c5c;
+}
+
+.main-seller_items{
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+
+
+  /* SECTION 4-CUSTOMER FEEDBACK (left, right) */
+  .slideshow-customer{
+    position: relative;
+    margin: auto;
+    flex: 50%;
+  }
+  .dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    border: 2px solid #F03328;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .dot_slider {
+    text-align: center;
+    bottom: 4%;
+    right: 0%;
+    position: absolute;
+  }
+  .active, .dot:hover {
+    background-color: #F03328;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  .customer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 56px;
+    gap: 105px;
+  }
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+.customer_left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 50%;
+}
+.customer_right{
+  flex: 50%;
+}
+
+.customer_right-bg {
+  position: relative;
+  padding: 182px 46px 1.5px 36px;
+}
+.customer_right-img{
+  position: absolute;
+  right: 5%;
+  bottom: 0%;
+}
+.text-contact_font-size_p{
+  font-size: 50px;
+  font-weight: 700;
+  display:flex;
+  gap: 10px;
+}
+
+/* .text_customer{
+  color: #3D3D3D;
+  font-size: 25px;
+  font-weight: 400;
+} */
+
+.feedback p{
+  color: #3D3D3D;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.frame_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.frame_left {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 18px;
+  margin-top: 20px;
+}
+.frame_item-text p:first-child {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+.frame_item-text p:last-child {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+.frame_right {
+  display: flex;
+  gap: 9px;
+}
+
+/* .customer_right-bg {
+  position: absolute;
+  bottom: 0;
+  left: 7%;
+  right: 0;
+  z-index: -1;
+  margin: 0 auto;
+} */
+
+
